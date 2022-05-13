@@ -29,13 +29,20 @@ const App = () => {
 
   return (
     <main className="flex flex-col items-center justify-center p-10 space-y-10">
-      <section className="flex flex-col items-center justify-center mt-10">
-        <h2 className="text-xl capitalize font-bold leading-relaxed">our menu</h2>
+      <section className="flex flex-col items-center justify-center mt-10 space-y-2">
+        <h2 className="text-xl capitalize font-bold leading-relaxed lg:text-2xl">
+          our menu
+        </h2>
         <div className="h-1 w-20 rounded-sm bg-blue-400"></div>
       </section>
       <section className="flex flex-col space-y-10">
         <div>
-          <h4 className="text-center font-mono pb-2">click to filter ⬇️</h4>
+          <h4
+            className="text-center font-mono pb-2 lg:text-xl
+          "
+          >
+            click to filter ⬇️
+          </h4>
           <Categories filterCategory={filterCategory} categories={categories} />
         </div>
         <div>
